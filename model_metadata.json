@@ -1,0 +1,49 @@
+{
+  "layihe": "Bina.az mənzil qiyməti proqnozu",
+  "model": "Random Forest (tuned)",
+  "yaradilma_tarixi": "2026-08-16 19:21",
+  "sklearn_versiya": "1.6.1",
+  "target": "price",
+  "target_cevrilmesi": "log1p / expm1",
+  "ededi_deyisenler": [
+    "unit_price",
+    "total_price",
+    "lat",
+    "lng",
+    "views",
+    "Otaq sayı",
+    "Sahə",
+    "mertebe",
+    "bina_mertebe_sayi",
+    "otaq_basi_sahe",
+    "nisbi_mertebe",
+    "sonuncu_mertebe",
+    "birinci_mertebe"
+  ],
+  "kateqorik_deyisenler": [
+    "datetime_scrape_x",
+    "city",
+    "products_label",
+    "owner_title",
+    "Binanın növü",
+    "Kateqoriya",
+    "Təmir",
+    "Çıxarış"
+  ],
+  "train_setir_sayi": 78861,
+  "test_setir_sayi": 19974,
+  "en_yaxsi_parametrler": {
+    "n_estimators": 150,
+    "min_samples_leaf": 1,
+    "max_features": 0.5,
+    "max_depth": 12
+  },
+  "cv_rmse_orta": 21100.248545659615,
+  "cv_rmse_std": 2546.118023962861,
+  "test_metrikler": {
+    "RMSE": 466634.0574959238,
+    "MAE": 23155.706822441414,
+    "MAPE_%": 1.8051742526275147,
+    "R2": 0.5760883028541355
+  }
+}
